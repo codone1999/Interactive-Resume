@@ -148,6 +148,13 @@ export const profileData = {
       tech: ["HTML", "CSS"],
       description: "Replicated Dell homepage layout using only HTML & CSS",
       link: "https://github.com/codone1999/Dell_website_clone"
+    },
+    {
+      id: 6,
+      name: "Interactive Resume",
+      tech: ["Vue.js", "Tailwind","JavaScript"],
+      description: "Interactive Resume",
+      link: "https://github.com/codone1999/Interactive-Resume"
     }
   ]
 };
