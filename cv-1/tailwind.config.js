@@ -1,13 +1,30 @@
 export default {
   content: [
-    "./index.html", 
+    "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
+      colors: {
+        dark: {
+          primary: '#121212',
+          secondary: '#1E1E1E',
+          tertiary: '#2A2A2A'
+        },
+        teal: {
+          400: '#4DD0E1',
+          500: '#00BFA6',
+          600: '#00A693'
+        },
+        orange: {
+          400: '#FF8A65',
+          500: '#FF6F61',
+          600: '#E64A19'
+        }
+      },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
-        'slide-up': 'slideUp 0.6s ease-out', 
+        'slide-up': 'slideUp 0.6s ease-out',
         'bounce-in': 'bounceIn 0.8s ease-out',
         'pulse-glow': 'pulseGlow 2s infinite',
       },
@@ -27,11 +44,11 @@ export default {
           '100%': { transform: 'scale(1)', opacity: '1' }
         },
         pulseGlow: {
-          '0%, 100%': { 
-            'box-shadow': '0 0 20px rgba(59, 130, 246, 0.5)' 
+          '0%, 100%': {
+            'box-shadow': '0 0 20px rgba(0, 191, 166, 0.5)'
           },
-          '50%': { 
-            'box-shadow': '0 0 30px rgba(59, 130, 246, 0.8)' 
+          '50%': {
+            'box-shadow': '0 0 30px rgba(0, 191, 166, 0.8)'
           }
         }
       }

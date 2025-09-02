@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen bg-dark-primary text-gray-100">
     <Navigation
       :sections="sections"
       :active-section="activeSection"

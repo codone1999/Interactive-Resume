@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300">
+  <div class="text-center p-4 bg-dark-tertiary rounded-lg hover:bg-dark-secondary transition-all duration-300 border border-gray-800 hover:border-teal-500/30">
     <div :class="[
       'text-2xl font-bold',
       colorClass
@@ -22,18 +22,20 @@ export default {
     },
     color: {
       type: String,
-      default: 'blue'
+      default: 'teal'
     }
   },
   computed: {
     colorClass() {
       const colorMap = {
-        blue: 'text-blue-400',
-        purple: 'text-purple-400',
+        teal: 'text-teal-400',
+        orange: 'text-orange-400',
         green: 'text-green-400',
-        yellow: 'text-yellow-400'
+        yellow: 'text-yellow-400',
+        blue: 'text-teal-400', 
+        purple: 'text-orange-400' 
       }
-      return colorMap[this.color] || 'text-blue-400'
+      return colorMap[this.color] || 'text-teal-400'
     }
   }
 }

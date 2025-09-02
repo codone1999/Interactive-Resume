@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:border-blue-400/50 transition-all duration-300 animate-slide-up">
-    <h3 class="text-xl font-bold mb-4 text-blue-400 capitalize">{{ category }}</h3>
+  <div class="bg-dark-secondary border border-gray-800 rounded-2xl p-6 hover:border-teal-500/50 transition-all duration-300 animate-slide-up hover:shadow-lg hover:shadow-teal-500/10">
+    <h3 class="text-xl font-bold mb-4 text-teal-400 capitalize">{{ category }}</h3>
     <div class="space-y-4">
-      <SkillBar 
-        v-for="skill in skills" 
+      <SkillBar
+        v-for="skill in skills"
         :key="skill.name"
         :skill="skill"
       />

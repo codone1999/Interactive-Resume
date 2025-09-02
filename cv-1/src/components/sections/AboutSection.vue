@@ -5,17 +5,16 @@
       <div class="lg:col-span-1">
         <ProfileCard :profile="data" @download="$emit('download')" />
       </div>
-      
+     
       <!-- Summary -->
       <div class="lg:col-span-2">
-        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 h-full animate-slide-up">
-          <h3 class="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+        <div class="bg-dark-secondary border border-gray-800 rounded-2xl p-8 hover:border-teal-500/50 h-full animate-slide-up transition-all duration-300">
+          <h3 class="text-3xl font-bold mb-6 bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">
             About Me
           </h3>
           <p class="text-gray-300 text-lg leading-relaxed mb-8">
             {{ data.summary }}
           </p>
-          
         </div>
       </div>
     </div>
@@ -24,13 +23,11 @@
 
 <script>
 import ProfileCard from '@/components/ui/ProfileCard.vue'
-import StatsCard from '@/components/ui/StatsCard.vue'
 
 export default {
   name: 'AboutSection',
   components: {
-    ProfileCard,
-    StatsCard
+    ProfileCard
   },
   props: {
     data: {

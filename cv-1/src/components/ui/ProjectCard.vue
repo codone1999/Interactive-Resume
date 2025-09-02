@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:border-blue-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-bounce-in group"
+    class="bg-dark-secondary border border-gray-800 rounded-2xl p-6 hover:border-teal-500/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/10 animate-bounce-in group"
     :style="{ animationDelay: index * 0.2 + 's' }"
   >
-    <h3 class="text-xl font-bold mb-3 text-blue-400 group-hover:text-purple-400 transition-colors">
+    <h3 class="text-xl font-bold mb-3 text-teal-400 group-hover:text-orange-400 transition-colors">
       {{ project.name }}
     </h3>
     <p class="text-gray-300 mb-4">{{ project.description }}</p>
@@ -14,7 +14,7 @@
         :tech="tech"
       />
     </div>
-    
+   
     <!-- Updated link section with proper GitHub handling -->
     <div class="flex items-center justify-between">
       <a
@@ -22,14 +22,14 @@
         target="_blank"
         rel="noopener noreferrer"
         @click="handleProjectClick"
-        class="inline-flex items-center space-x-2 text-blue-400 hover:text-purple-400 transition-colors group-hover:translate-x-1 transform duration-300"
+        class="inline-flex items-center space-x-2 text-teal-400 hover:text-orange-400 transition-colors group-hover:translate-x-1 transform duration-300"
       >
         <span>{{ linkText }}</span>
         <span>{{ linkIcon }}</span>
       </a>
-      
+     
       <!-- GitHub link if different from main link -->
-      <a 
+      <a
         v-if="project.github && project.github !== project.link"
         :href="project.github"
         target="_blank"
@@ -66,15 +66,15 @@ const linkText = computed(() => {
   if (props.project.link === '#' || !props.project.link) {
     return 'Demo Coming Soon'
   }
-  
+ 
   if (props.project.link.includes('github.com')) {
     return 'View on GitHub'
   }
-  
+ 
   if (props.project.link.includes('demo') || props.project.link.includes('app')) {
     return 'Live Demo'
   }
-  
+ 
   return 'View Project'
 })
 
@@ -82,11 +82,11 @@ const linkIcon = computed(() => {
   if (props.project.link === '#' || !props.project.link) {
     return '🚧'
   }
-  
+ 
   if (props.project.link.includes('github.com')) {
     return '🔗'
   }
-  
+ 
   return '→'
 })
 
@@ -97,7 +97,7 @@ const handleProjectClick = (event) => {
     alert('Project demo coming soon!')
     return
   }
-  
+ 
   // Let the default link behavior handle the rest
 }
 </script>
