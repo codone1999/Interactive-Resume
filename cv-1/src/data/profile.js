@@ -74,7 +74,7 @@ export const profileData = {
     { name: "java", level: 70, category: "backend" },
     { name: "Docker", level: 55, category: "devops" },
     { name: "Git", level: 70, category: "tools" },
-    { name: "Spring Boot", level: 70, category: "backend" },
+    { name: "REST API", level: 70, category: "backend" },
     { name: "Wireshark", level: 60, category: "tools" },
     { name: "HTML", level: 75, category: "frontend" },
     { name: "CSS", level: 65, category: "frontend" },
@@ -91,28 +91,24 @@ export const profileData = {
       school: "King Mongkut's University of Technology Thonburi",
       period: "2023 - now",
       gpa: "2.29/4.0"
+    },
+    {
+      id: 2,
+      degree: "Mathematics and English Program",
+      school: "Assumption College Samutprakarn",
+      period: "2019 - 2022",
+      gpa: "3.0/4.0"
     }
   ],
   
   projects: [
     {
       id: 1,
-      name: "E-Commerce Platform",
-      tech: ["Vue.js", "Node.js", "MongoDB", "Stripe"],
-      description: "Full-stack e-commerce solution with real-time inventory management",
-      link: "#",
+      name: "ITBMS-SHOP Webapp(In-Progress)",
+      tech: ["Vue.js", "Java", "MySql", "Rest API"],
+      description: "online shopping platform for mobile phone",
+      link: "https://github.com/codone1999/Chimpanzini-Bananini-NW3",
       image: "/api/placeholder/300/200"
-    }
-  ],
-  projects: [
-    {
-      id: 1,
-      name: "E-Commerce Platform",
-      tech: ["Vue.js", "Node.js", "MongoDB", "Stripe"],
-      description: "Full-stack e-commerce solution with real-time inventory management",
-      link: "https://github.com/alexjohnson/ecommerce-platform",
-      github: "https://github.com/alexjohnson/ecommerce-platform",
-      demo: "https://ecommerce-demo.vercel.app"
     }
   ]
 };
