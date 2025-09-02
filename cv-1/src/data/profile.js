@@ -63,7 +63,19 @@ export const profileData = {
       "Making data-driven decisions in project development",
       "Identifying potential issues before they become problems"
     ]
+  },
+  {
+  id: 6,
+  title: "Leadership",
+  icon: "👑",
+  description: "Ability to guide, motivate, and inspire a team to achieve goals",
+  examples: [
+    "Leading a team project to successful completion",
+    "Mentoring junior members or peers",
+    "Delegating tasks effectively and ensuring collaboration"
+  ]
   }
+
 ],
   
   skills: [
@@ -107,8 +119,35 @@ export const profileData = {
       name: "ITBMS-SHOP Webapp(In-Progress)",
       tech: ["Vue.js", "Java", "MySql", "Rest API"],
       description: "online shopping platform for mobile phone",
-      link: "https://github.com/codone1999/Chimpanzini-Bananini-NW3",
-      image: "/api/placeholder/300/200"
+      link: "https://github.com/codone1999/Chimpanzini-Bananini-NW3"
+    },
+    {
+      id: 2,
+      name: "Note webapp",
+      tech: ["Vue.js", "Tailwind"],
+      description: "Browser-based note",
+      link: "https://github.com/Pratchaya-jamp/Vue-NoteApp"
+    },
+    {
+      id: 3,
+      name: "Battle meme game card",
+      tech: ["Vue.js", "Tailwind","Json"],
+      description: "2-player card battle webapp inspired by Final Fantasy Rebirth mini game",
+      link: "https://github.com/Pratchaya-jamp/Meme-Blood"
+    },
+    {
+      id: 4,
+      name: "Battle meme game card(Online Version, In Progress)",
+      tech: ["Vue.js", "Tailwind", "Java", "MySql", "Rest API"],
+      description: "Rebuilt the card battle game with Spring Boot + MySQL backend",
+      link: "https://github.com/codone1999/MemeBattle-inprogress"
+    },
+    {
+      id: 5,
+      name: "Dell website clone",
+      tech: ["HTML", "CSS"],
+      description: "Replicated Dell homepage layout using only HTML & CSS",
+      link: "https://github.com/codone1999/Dell_website_clone"
     }
   ]
 };
